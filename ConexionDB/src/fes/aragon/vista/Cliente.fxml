@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="331.0" prefWidth="600.0" type="Pane" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fes.aragon.controlador.ClienteController">
+   <children>
+      <TableView fx:id="tblTablaCliente" layoutX="23.0" layoutY="110.0" prefHeight="200.0" prefWidth="554.0">
+        <columns>
+          <TableColumn fx:id="clienteID" prefWidth="90.0" text="ID" />
+          <TableColumn fx:id="clienteNombre" prefWidth="166.0" text="Nombre" />
+            <TableColumn fx:id="clienteApellidoPaterno" prefWidth="162.0" text="Apellido Paterno" />
+            <TableColumn fx:id="comando" prefWidth="135.0" text="Editar" />
+        </columns>
+      </TableView>
+      <FontAwesomeIconView fill="#1660ff" glyphName="PLUS_CIRCLE" layoutX="37.0" layoutY="96.0" onMouseClicked="#nuevoCliente" size="40" />
+      <FontAwesomeIconView fill="#00ab1d" glyphName="REPEAT" layoutX="91.0" layoutY="96.0" onMouseClicked="#refrescar" size="40" />
+      <Label layoutX="23.0" layoutY="14.0" text="Cliente">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+   </children>
+</fx:root>
